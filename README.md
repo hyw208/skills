@@ -149,7 +149,6 @@ A JSON object with `status` and `result` or `message`.
 ```json
 {"status": "error", "message": "unsupported operand type(s) for +: 'int' and 'str'"}
 ```
-```
 
 ## Step 6: Test and Use the Skill
 
@@ -192,24 +191,18 @@ By following these guidelines, you can create powerful, safe, and reusable skill
 
 This project uses `pytest` for testing skills. Test dependencies are defined under `[project.optional-dependencies.test]` in each skill's `pyproject.toml` file.
 
-To run the tests for a specific skill (e.g., the `calculator` skill):
+To run the tests for a specific skill (e.g., the `calculator` skill), use the `test.sh` script:
 
 1.  **Navigate to the skill's directory:**
     ```bash
     cd .github/skills/calculator
     ```
 
-2.  **Activate the virtual environment:**
+2.  **Run the test script:**
     ```bash
-    source .venv/bin/activate
+    ./test.sh
     ```
-
-3.  **Install the skill with test dependencies:**
+    You can also pass arguments directly to `pytest` via the script:
     ```bash
-    uv pip install -e ".[test]"
-    ```
-
-4.  **Run pytest:**
-    ```bash
-    pytest
+    ./test.sh -k "success"
     ```
