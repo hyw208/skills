@@ -1,6 +1,6 @@
 # Tutorial: Creating Reusable, Standalone Skills for AI Assistants
 
-This tutorial guides you through creating custom skills (tools or scripts) that AI assistants like GitHub Copilot and Gemini CLI can use. We'll focus on creating robust, Python-based skills with isolated environments that are easy to manage and share.
+This tutorial guides you through creating custom skills (tools or scripts) that AI assistants like GitHub Copilot can use. We'll focus on creating robust, Python-based skills with isolated environments that are easy to manage and share.
 
 ## Where to Store Skills: Scope and Discovery
 
