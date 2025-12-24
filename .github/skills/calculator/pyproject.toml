@@ -1,0 +1,8 @@
+[project]
+name = "calculator-skill"
+version = "0.1.0"
+description = "A simple calculator skill."
+dependencies = [
+  # For a safer evaluator, you might add:
+  # "asteval"
+]
